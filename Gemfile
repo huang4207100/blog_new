@@ -1,4 +1,4 @@
-source 'https://rubygems.org/'
+source 'https://gems.ruby-china.org'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -6,7 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 group :productuon do
-  gem 'pg','0.15.1'
+  gem 'pg'
+  gem 'rails_12factor'
 end 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
